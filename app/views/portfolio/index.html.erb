@@ -1,0 +1,343 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"/>
+
+<style>
+  body{
+    background:black;
+    perspective: 900px;
+  }
+
+    .slide{
+      width:700px;
+      height:340px;
+      background:rgb(31,31,31);
+      margin-left: 190px;
+      cursor: pointer !important;
+    }
+
+    .your-class {
+      margin-top:100px;
+    }
+
+    .slide h1 {
+      font-size:70px;
+      font-weight: 100;
+      color:white;
+      font-family: 'Alegreya Sans SC', sans-serif;
+      text-align: center;
+      margin-top:140px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .slick-active h1 {
+      opacity: 0;
+    }
+
+    .slick-active h1 {
+      animation: slick 300ms ease-in-out forwards 1 300ms;
+    }
+
+    .slick-active h1::after {
+      content: "";
+      display: block;
+      bottom: 0;
+      position: absolute;
+      width:0%;
+      height: 1px;
+      background:rgba(255,255,255,0.5);
+      animation: after 1s ease-in-out forwards 1 600ms;
+    }
+
+    @keyframes slick {
+      0%{
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes after {
+      0%{
+        width: 0;
+      }
+      50%{
+        width: 100%;
+      }
+      100%{
+        right: 0;
+        width: 0%;
+      }
+    }
+
+    * {
+      outline: none;
+    }
+
+    .heading {
+      position: absolute;
+      top:30px;
+      left:0%;
+      right:0;
+      font-size:20px;
+      display: block;
+      margin: 0 auto;
+      color:white;
+      letter-spacing: 2px;
+      text-align: center;
+      font-family: 'Alegreya Sans SC', sans-serif;
+
+      font-weight: 100;
+    }
+    
+    .slick-dots li {
+      display: inline;
+      margin: 0 auto;
+      background:none;
+      font-size:14px;
+
+    }
+
+    .slick-dots li button {
+      background:none;
+      border:none;
+      border-bottom: 2px solid rgba(255,255,255,0.4);
+      margin-left: 30px;
+      color:white;
+      font-size:14px;
+      font-family: "Open Sans", sans-serif;
+      cursor: pointer !important;
+      width:70px;
+      transition: all 300ms ease-in-out;
+
+
+    }
+
+    .slick-active button {
+      border-bottom: 2px solid rgba(255,255,255,1) !important;
+      transform: translateY(-10px);
+
+    }
+    .slick-dots {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      margin-top:50px;
+      margin-left: -50px;
+    }
+
+    .footer-instructions {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: footer 1.1s ease-in-out forwards 1 0.3s;
+    }
+
+    @keyframes footer {
+      0%{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .slick-next {
+      position: fixed;
+      right: 0;
+      width:280px;
+      height: 400px;
+      top:100px;
+      border:none;
+      opacity: 0;
+
+    }
+
+  .slick-prev {
+    position: fixed;
+    left: 0;
+    width:280px;
+    height: 400px;
+    top:100px;
+    opacity: 0;
+    z-index: 999999999999999;
+
+  }
+
+    #tail img {
+      filter: invert(100%);
+      width:40px;
+      height:40px;
+      z-index: 999999999999999999999999999999;
+
+    }
+
+  #tail {
+    position: absolute;
+    float: left;
+    z-index: 999999999999999999999999999999;
+    pointer-events: none;
+
+  }
+
+    .right, .left {
+      opacity: 0;
+    }
+
+    @media only screen and (max-width: 300px){
+      .#tail {
+        display: none !important;
+      }
+    }
+  @media only screen and (max-width: 600px){
+    #tail {
+      display: none !important;
+    }
+    .slick-next {
+      width:50px !important;
+    }
+    .slick-prev {
+      width:50px !important;
+    }
+  }
+
+    .slide {
+      animation: goup 1s ease-in-out forwards 1;
+    }
+
+    @keyframes goup{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+</style>
+
+
+<%= render 'partials/nav' %>
+
+<h1 class="heading">PORTFOLIO</h1>
+<div class="your-class">
+  <div onclick="window.location.href='portfolio/project1'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://cdn.dribbble.com/users/231089/screenshots/3744635/drib_shot2.gif) center center no-repeat; background-size: cover;" class="slide"><h1><span>Lorem Ipsum</span></h1></div>
+  <div onclick="window.location.href='portfolio/project2'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://cdn.dribbble.com/users/215297/screenshots/1717944/material-keynote-animation.gif) center center no-repeat; background-size: cover;" class="slide"><h1><span>Lorem Ipsum</span></h1></div>
+  <div onclick="window.location.href='portfolio/project3'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://thumbs.gfycat.com/CriminalShowyCorydorascatfish-max-1mb.gif) center center no-repeat; background-size: cover;" class="slide"><h1>Lorem Ipsum</h1></div>
+  <div onclick="window.location.href='portfolio/project4'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://i.pinimg.com/originals/6f/23/30/6f23300ebc7a006c80f910c2f639f60a.gif) center center no-repeat; background-size: cover;" class="slide"><h1><span>Lorem Ipsum</span></h1></div>
+  <div onclick="window.location.href='portfolio/project5'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://i.pinimg.com/originals/ba/6b/10/ba6b10b4dfae0484b1e387dc4140b138.gif) center center no-repeat; background-size: cover;" class="slide"><h1><span>Lorem Ipsum</span></h1></div>
+  <div onclick="window.location.href='portfolio/project6'" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://i.pinimg.com/originals/00/4c/40/004c4048c8b67ca6d046f4c4812400a7.gif) center center no-repeat; background-size: cover;" class="slide"><h1><span>Lorem Ipsum</span></h1></div>
+
+
+</div>
+<div id="tail">
+  <img class="left" src="http://homepages.neiu.edu/~jarroyo7/cs300/images/backwardArrow.png"/>
+  <img class="right" src="https://maxcdn.icons8.com/Share/icon/p1em/Arrows//long_arrow_right1600.png"/>
+</div>
+
+<div class="portfolio-body"></div>
+
+<%= render 'partials/footer' %>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        jQuery('.slick-slide').bind('touchstart', function(){ console.log('touchstart') });
+
+        $('.your-class').slick({
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            centerMode: true,
+            dots: true,
+            swipe: true
+
+        });
+
+        var timeoutId = 0;
+
+        $('.slide').on('mousedown', function() {
+
+
+
+            timeoutId = setTimeout(function(){
+                alert("he");
+            }, 1000);
+        }).on('mouseup mouseleave', function() {
+            clearTimeout(timeoutId);
+        });
+
+
+
+        $(".footer-instructions").html("Use Arrow Keys or click to navigate slider");
+
+
+        $(".slick-next").hover(function(){
+
+            $('#tail').css({
+                opacity: "1"
+            });
+            $(".right").css({
+                opacity: "1"
+            });
+            $(document).bind('mousemove', function(e){
+                $('#tail').css({
+                    left:  e.pageX + 20,
+                    top:   e.pageY
+                });
+            });
+            $("*").css({
+                cursor: "none"
+            });
+        }, function(){
+            $("*").css({
+                cursor: "auto"
+            });
+            $('#tail').css({
+                opacity: "0"
+            });
+            $(".right").css({
+                opacity: "0"
+            });
+
+        });
+
+
+
+        $(".slick-prev").hover(function(){
+            $('#tail').css({
+                opacity: "1"
+            });
+            $(".left").css({
+                opacity: "1"
+            });
+            $(document).bind('mousemove', function(e){
+                $('#tail').css({
+                    left:  e.pageX + 20,
+                    top:   e.pageY
+                });
+            });
+            $("*").css({
+                cursor: "none"
+            });
+        }, function(){
+            $("*").css({
+                cursor: "auto"
+            });
+            $(".left").css({
+                opacity: "0"
+            });
+            $('#tail').css({
+                opacity: "0"
+            });
+
+        });
+
+    });
+
+</script>

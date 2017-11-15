@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Perfect Presence</title>
+
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/three.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/CanvasRenderer.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/Projector.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/435840/OrbitControls.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/150586/THREEx.WindowResize.js"></script>
+        <link rel="stylesheet" href="Stylesheets/HomePage.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300" rel="stylesheet">
+       <style>
+
+        </style>
+        </head>
+
+    <body>
+
+    <!-- Loader -->
+    <div class="loader2">
+        <div class="loader">
+            <div id="largeBox"></div>
+            <div id="smallBox"></div>
+        </div>
+        <p style="color:white;">Loading The Dream...</p>
+    </div>
+    <!-- End Loader -->
+
+    <!-- Hovered in nav -->
+    <div class="fixed-nav">
+        <div class="inner-fixed-nav">
+            <h1 class="nav1"><span onclick="window.location.href = '/'" >Home</span></h1>
+            <h1 class="nav3" onclick="window.location.href = '/portfolio'" ><span>Portfolio</span></h1>
+            <h1 class="nav5" onclick="window.location.href = '/contact'"><span>Get Started</span></h1>
+        </div>
+    </div>
+    <!-- end nav -->
+
+    <!-- slider pages -->
+    <div id="fullpage">
+        <!-- First Page -->
+        <div class="section active" id="section0">
+            <div class="design-line">
+                <div class="left-corner"></div>
+                <div class="right-corner"></div>
+                <div class="bottom-right-corner"></div>
+                <div class="bottom-left-corner"></div>
+            </div>
+            <div onclick="window.location.href='/contact'" class="sign-up-btn">
+                <div class="left-corner">+</div>
+                <div class="right-corner "><span>+</span></div>
+                <div class="bottom-right-corner"><span style="opacity: 0;">+</span></div>
+                <div class="bottom-left-corner"><span style="opacity: 0;">+</span></div>
+                <h1>Schedule My Consultation</h1>
+            </div>
+            <div id="wrapper">
+                <canvas id="stage"></canvas>
+            </div>
+            <div class="phone-design"></div>
+            <div id="threejs"></div>
+            <div class="message"></div>
+        </div>
+
+
+        <div class="section" id="section2">
+            <div class="intro"></div>
+        </div>
+    </div>
+
+    <!-- Main Nav -->
+    <div class="navbar">
+        <h1>GR</h1>
+        <div class="dot-container">
+            <div id="threeLines">
+                <button id="el"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; Gaming Revolution &#8759;</p>
+        <p class="footer-instructions">Click navigation to navigate</p>
+        <div class="right-text">
+            <ul>
+                <li>Social</li>
+                <li style="font-size:16px;font-weight: 100 !important;">&#8759;</li>
+                <li><img src="https://static1.squarespace.com/static/54b297e1e4b089270ed32a86/54e74d70e4b02db31b39fa08/54e74e97e4b0866feef1025a/1424445173581/twitter-4096-black.png"/></li>
+                <li><img src="https://cdn1.iconfinder.com/data/icons/simple-icons/1024/facebook-1024-black.png"/></li>
+                <li><img src="http://www.iconsdb.com/icons/preview/black/google-plus-xxl.png"/></li>
+                <li style="font-size:16px;font-weight: 100 !important;">&#8759;</li>
+                <li>TOS</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="javascripts/init.js"></script>
+    <script src="javascripts/glitch.js"></script>
+
+        <script src="javascripts/model1.js"></script>
+    <script src="javascripts/arbitrarydesign.js"></script>
+    </body>
+</html>

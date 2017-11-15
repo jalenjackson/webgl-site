@@ -1,0 +1,30 @@
+<div style="z-index: 9999999999999999999999999999999999;" class="navbar">
+  <h1>PP</h1>
+  <div class="dot-container">
+    <div id="threeLines">
+      <button id="el"></button>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-nav">
+  <div class="inner-fixed-nav">
+    <h1 class="nav1"><span onclick="window.location.href = '/'" >Home</span></h1>
+    <h1 class="nav3" onclick="window.location.href = '/portfolio'" ><span>Portfolio</span></h1>
+
+    <h1 class="nav5" onclick="window.location.href = '/contact'"><span>Get Started</span></h1>
+  </div>
+</div>
+
+<script>
+    $(".dot-container").click(function(){
+        $(".fixed-nav").toggleClass("show-fixed");
+        $("#threejs").toggleClass("flicker-out");
+        $("#threejs2").toggleClass("flicker-out");
+        $("#threejs3").toggleClass("flicker-out");
+        $("#wrapper").toggleClass("flicker-out");
+        $(".sign-up-btn").toggleClass("flicker-out");
+        $(".inner-fixed-nav h1").toggleClass("move-down");
+        $(".footer").toggleClass("flicker-out");
+    });
+</script>
