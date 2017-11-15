@@ -394,7 +394,7 @@ body {
     position: fixed;
     left:60px;
     font-size:13px;
-    top:140px;
+    top:40px;
     color:rgba(255,255,255,1);
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
@@ -934,7 +934,7 @@ canvas {
     z-index: 999999999999;
     font-weight: 900;
     color:white;
-    margin-top:105px !important;
+    margin-top:-5px !important;
     text-transform: uppercase;
     opacity: 0;
     transform: translateZ(100px);

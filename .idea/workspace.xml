@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ccb44655-6f94-48bf-abcb-b8a4669e1a2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Stylesheets/HomePage.css" afterPath="$PROJECT_DIR$/public/Stylesheets/HomePage.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -54,17 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePage.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomePage.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/Stylesheets/HomePage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="936" column="17" lean-forward="false" selection-start-line="936" selection-start-column="17" selection-end-line="936" selection-end-column="17" />
+            <state relative-caret-position="200">
+              <caret line="396" column="8" lean-forward="true" selection-start-line="396" selection-start-column="8" selection-end-line="396" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -139,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>partic</find>
       <find>flicker-o</find>
       <find>radial</find>
       <find>fixed-</find>
@@ -169,6 +167,7 @@
       <find>of</find>
       <find>inner</find>
       <find>fixed-nav h1</find>
+      <find>title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,10 +197,10 @@
         <option value="$PROJECT_DIR$/app/views/portfolio/index.html.erb" />
         <option value="$PROJECT_DIR$/public/javascripts/init.js" />
         <option value="$PROJECT_DIR$/public/javascripts/model1.js" />
-        <option value="$PROJECT_DIR$/public/Stylesheets/HomePage.css" />
         <option value="$PROJECT_DIR$/app/views/partials/_nav.html.erb" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/public/Stylesheets/HomePage.css" />
       </list>
     </option>
   </component>
@@ -649,12 +648,12 @@
       <workItem from="1506822114383" duration="197000" />
       <workItem from="1507187192213" duration="1099000" />
       <workItem from="1510784918246" duration="1090000" />
-      <workItem from="1510786741188" duration="2671000" />
+      <workItem from="1510786741188" duration="2866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51413000" />
+    <option name="totallyTimeSpent" value="51608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -987,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/Stylesheets/HomePage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="936" column="17" lean-forward="false" selection-start-line="936" selection-start-column="17" selection-end-line="936" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/_nav.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1031,6 +1022,14 @@
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Stylesheets/HomePage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="396" column="8" lean-forward="true" selection-start-line="396" selection-start-column="8" selection-end-line="396" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
